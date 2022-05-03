@@ -37,6 +37,7 @@ dependencies {
     def nav_version = "2.4.2"
     def coroutines_version ="1.6.0"
     def room_version = "2.4.2"
+    def glide_version = "4.13.0"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -61,6 +62,10 @@ dependencies {
     //kotlin coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    //Bumtech glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
 
     //room persistence library
     implementation "androidx.room:room-runtime:$room_version"
